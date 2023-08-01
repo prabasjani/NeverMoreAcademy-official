@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: var(--light-bg);
+    /* padding: 0 50px; */
+    
+}
+section{
+    padding: 50px 50px;
+}
+:root{
+    --font-color: #fff;
+    --black: #24292d;
+    --nav-main: #4070f4;
+    --switcher-main: #0b3cc1;
+    --light-bg: #f0f8ff;
+    --green-color: #29c801;
+}
+.hide{
+    display: none;
+}
+
+/* Nav-bar design starts */
+.navbar{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--nav-main);
+    margin: auto;
+    padding: 0 50px;
+}
+.navbar .name{
+    font-size: 20px;
+    color: var(--font-color);
+}
+.navbar .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-content .nav-links{
+    display: flex;
+}
+.nav-content .nav-links a{
+    font-size: 16px;
+    color: var(--font-color);
+    padding: 0 10px;
+    font-weight: bold;
+}
+.nav-content .nav-links a:hover{
+    border-radius: 4px;
+    padding: 8px 10px;
+    background: var(--switcher-main);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--font-color);
+    transition: all 0.4s ease-in-out;
+
+}
+.nav-content .search-bar{
+    display: flex;
+    position: relative;
+    color: var(--black);
+    height: 40px;
+    background: #fff;
+    padding: 5px 5px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.search-bar input{
+    height: 30px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+}
+.nav-content .color-feature{
+    display: flex;
+    margin-left: 20px;
+}
+.color-feature .light-dark{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    background: var(--switcher-main);
+    padding: 5px;
+}
+.color-feature .color-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background: var(--switcher-main);
+    padding: 10px 5px 5px 10px;
+}
+.color-icon .color-box{
+    height: 65px;
+    width: 125px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 4px;
+}
+.color-box .color-themes button{
+    height: 20px;
+    width: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    margin: 8px 2px;
+}
+/* Nav-bar design ends */
+
+/* Home page design starts */
+.home-container{
+    position: absolute;
+    width: 60%;
+    margin: 140px 0px;
+}
+.home-container h2{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.home-container h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.home-container h3 span{
+    color: var(--nav-main);
+}
+.home-container p{
+    font-size: 22px;
+}
+.home-container .btn-reg{
+    font-size: 20px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 4px;
+    background: var(--nav-main);
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+.home-container .btn-reg:hover{
+    background: var(--switcher-main);
+    transition: all 0.3s ease;
+}
+.home-container .btn-reg a{
+    color: var(--font-color);
+}
+.academy-logo{
+    position: absolute;
+    top: 175px;
+    right: 100px;
+    border: none;
+    background: var(--nav-main);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.academy-logo:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}
+.academy-logo img{
+    height: 350px;
+    width: 350px;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* Home page design ends  */
+
+/* Footer design starts */
+.footer-content{
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 450px;
+}
+.footer-content .foot{
+    font-size: 16px;
+}
