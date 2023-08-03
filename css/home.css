@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    transition: all 0.4s ease-in-out;
 }
 body{
     height: 100vh;
@@ -13,7 +14,7 @@ body{
     
 }
 section{
-    padding: 50px 50px;
+    padding: 50px 50px 0px 50px;
 }
 :root{
     --font-color: #fff;
@@ -63,8 +64,6 @@ section{
     background: var(--switcher-main);
     padding-bottom: 6px;
     border-bottom: 2px solid var(--font-color);
-    transition: all 0.4s ease-in-out;
-
 }
 .nav-content .search-bar{
     display: flex;
@@ -153,11 +152,9 @@ section{
     border-radius: 4px;
     background: var(--nav-main);
     margin-top: 30px;
-    transition: all 0.3s ease;
 }
 .home-container .btn-reg:hover{
     background: var(--switcher-main);
-    transition: all 0.3s ease;
 }
 .home-container .btn-reg a{
     color: var(--font-color);
@@ -169,11 +166,9 @@ section{
     border: none;
     background: var(--nav-main);
     border-radius: 10px;
-    transition: all 0.4s ease-in-out;
 }
 .academy-logo:hover{
     transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
 }
 .academy-logo img{
     height: 350px;
@@ -193,6 +188,210 @@ section{
 }
 /* Home page design ends  */
 
+/* Courses design starts */
+.course-container{
+    position: relative;
+    margin: 35px 0px;
+}
+.course-container .title h2{
+    font-size: 45px;
+    text-align: center;
+}
+.title h2 span{
+    color: var(--nav-main);
+}
+.course-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.course-items .course-card{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 3px 3px 6px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 40px 30px;
+    text-align: center;
+    margin: 0px 30px;
+}
+.course-items .course-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 2px 4px var(--nav-main);
+}
+.course-card h3{
+    font-size: 28px;
+    padding: 15px 0px;
+}
+.course-card p{
+    font-size: 20px;
+    color: #5c5e60;
+}
+.course-card button.course-btn1{
+    border: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    background: var(--nav-main);
+    border-radius: 4px;
+    margin-top: 64px;
+}
+.course-card button.course-btn2{
+    border: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    background: var(--nav-main);
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.course-card button.course-btn1:hover,
+.course-card button.course-btn2:hover{
+    background: var(--switcher-main);
+}
+.course-card button a{
+    color: var(--font-color);
+}
+/* Courses design ends */
+
+/* Free Courses design starts */
+.nav-content .course-nav-links{
+    display: flex;
+}
+.nav-content .course-nav-links a{
+    font-size: 16px;
+    color: var(--font-color);
+    padding: 11px 25px;
+    margin: 0px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background: var(--switcher-main);
+}
+.course-items-top,
+.course-items-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px;
+}
+.course-items-top .free-course-card,
+.course-items-bottom .free-course-card{
+    height: 150px;
+    width: 350px;
+    margin: 0px 15px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 3px rgba(0,0,0,0.2);
+}
+.free-course-card:hover{
+    transform: scale(1.08);
+}
+.free-course-card .left-contain{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+}
+.free-course-card .left-contain .logos{
+    font-size: 120px;
+}
+.free-course-card .right-contain h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.free-course-card .right-contain .star{
+    background: red;
+    font-size: 16px;
+    height: 24px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.free-course-card .right-contain .course-btn2{
+    padding: 10px 20px;
+    background: var(--nav-main);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.free-course-card .right-contain .course-btn2:hover{
+    background: var(--switcher-main);
+}
+.right-contain button a{
+    color: var(--font-color);
+}
+.free-course-card .right-contain{
+    position: relative;
+    left: 120px;
+    height: 100%;
+    width: 165px;
+    padding: 10px;
+}
+/* Free Courses design ends */
+
+/* Paid Courses design starts */
+.paid-course-items-top,
+.paid-course-items-middle,
+.paid-course-items-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.paid-course-items-top .paid-course-card,
+.paid-course-items-middle .paid-course-card,
+.paid-course-items-bottom .paid-course-card{
+    height: 140px;
+    width: 350px;
+    margin: 0px 15px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 3px rgba(0,0,0,0.2);
+}
+.paid-course-card:hover{
+    transform: scale(1.08);
+}
+.paid-course-card .left-contain{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+}
+.paid-course-card .left-contain .logos{
+    font-size: 120px;
+}
+.paid-course-card .left-contain .logos img{
+    height: 90px;
+}
+.paid-course-card .right-contain h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.paid-course-card .right-contain .star{
+    background: red;
+    font-size: 16px;
+    height: 24px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.paid-course-card .right-contain .course-btn2{
+    padding: 10px 20px;
+    background: var(--nav-main);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.paid-course-card .right-contain .course-btn2:hover{
+    background: var(--switcher-main);
+}
+.right-contain button a{
+    color: var(--font-color);
+}
+.paid-course-card .right-contain{
+    position: relative;
+    left: 120px;
+    height: 100%;
+    width: 165px;
+    padding: 10px;
+}
+/* Paid Courses design ends */
+
 /* Footer design starts */
 .footer-content{
     position: absolute;
@@ -206,3 +405,4 @@ section{
 .footer-content .foot{
     font-size: 16px;
 }
+/* Footer design ends */
