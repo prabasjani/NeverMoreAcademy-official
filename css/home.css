@@ -196,6 +196,7 @@ section{
 .course-container .title h2{
     font-size: 45px;
     text-align: center;
+    font-weight: bold;
 }
 .title h2 span{
     color: var(--nav-main);
@@ -391,6 +392,164 @@ section{
     padding: 10px;
 }
 /* Paid Courses design ends */
+
+/* Contact Courses design starts */
+.contact-container{
+    position: relative;
+    margin: 35px 0px;
+}
+.contact-container .title h2{
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .mentor{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    padding: 20px;
+    margin: 0px 20px;
+}
+.mentor .profile img{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--font-color);
+    box-shadow: 0 0 0 4px var(--font-color),
+                0 0 0 8px var(--nav-main),
+                0 0 0 12px var(--font-color),
+                0 0 0 16px var(--switcher-main);
+    position: relative;
+    left: 33%;
+}
+.mentor .details{
+    text-align: center;
+    margin: 20px 0px;
+}
+.mentor .details h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+.mentor .details h3{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.mentor .details p{
+    font-size: 16px;
+}
+.mentor .social-media{
+    display: flex;
+    text-align: center;
+    justify-content: space-between; 
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+.mentor .social-media .bx{
+    position: relative;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+/* social-media own color patterns */
+.mentor .social-media .bx.bxs-phone-call{
+    color: #0b3cc1;
+}
+.mentor .social-media .bx.bxl-whatsapp{
+    background:	#25D366;
+    color: white;
+}
+.mentor .social-media .bx.bxl-telegram{
+    background: #0088cc;
+    color: white;
+}
+.mentor .social-media .bx.bxl-github{
+    font-size: 50px;
+    padding: 0px;
+}
+.mentor .social-media .bx.bxl-linkedin{
+    background: #0A66C2;
+    color: white;
+}
+.mentor .social-media .bx.bxl-youtube{
+    background: #FF0000;
+    color: white;
+}
+.mentor .social-media .bx.bxl-instagram{
+    background: linear-gradient(#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    color: white;
+}
+.mentor .social-media .bx.bxl-facebook{
+    background: linear-gradient(#0165E1,#17A9FD);
+    color: white;
+}
+.mentor .social-media .bx:hover{
+    transform: scale(1.2);
+}
+
+.content .form{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    padding: 20px;
+    margin: 0px 20px;
+}
+.form input{
+    border: none;
+    width: 450px;
+    display: block;
+    height: 40px;
+    margin: 15px 60px;
+    padding: 0px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.form textarea{
+    border: none;
+    width: 450px;
+    display: block;
+    height: 120px;
+    margin: 15px 60px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.form .sendBtn{
+    width: 150px;
+    border: none;
+    margin-bottom: 14px;
+    background: var(--nav-main);
+    color: var(--font-color);
+}
+.form .sendBtn:hover{
+    background: var(--switcher-main);
+}
+.form .mail{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    margin: 0px 60px;
+}
+.form .bx.bxl-gmail{
+    font-size: 30px;
+    color: #D44638;
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.form .bx.bxl-gmail:hover{
+    transform: scale(1.2);
+}
+/* Contact Courses design ends */
 
 /* Footer design starts */
 .footer-content{
